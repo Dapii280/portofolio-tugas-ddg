@@ -1,0 +1,180 @@
+<!-- Deklarasi tipe dokumen HTML5 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Daviq</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navigasi -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <div class="logo">Daviq</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">about me</a></li>
+          <li><a href="#skills">skils</a></li>
+          <li><a href="#projects">project</a></li>
+          <li><a href="#contact">my contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Halaman Depan -->
+  <section id="home" class="hero section">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Halo, Saya <span>Daviq</span></h1>
+          <p>Siswa SMK Taruna Bhakti - Jurusan RPL</p>
+        </div>
+        <div class="hero-image">
+          <img src="img/L lawliet.jpg" alt="Foto Daviq" class="profile-photo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tentang Saya -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title text-center">about me</h2>
+      <p class="section-description">
+        Saya adalah siswa SMK Taruna Bhakti yang sekarang sedang berada di tingkat xrpl2 dan saya memiliki minat di bidang
+        it ini menjadi web dev
+      </p>
+    </div>
+  </section>
+
+  <!-- Kemampuan -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title text-center">skills</h2>
+      <p class="section-description">
+        bahasa pemograman yang saya kuasai:
+      </p>
+
+      <div class="skills-container">
+        <!-- skill gambar -->
+        <div class="skill-item">
+          <img src="img/html.png" alt="HTML" class="skill-logo">
+          <span class="skill-name">HTML</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="img/css.png" alt="CSS" class="skill-logo">
+          <span class="skill-name">CSS</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="skill-logo">
+          <span class="skill-name">JavaScript</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="img/ts.png" alt="Type Script" class="skill-logo">
+          <span class="skill-name">Type Script</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="skill-logo">
+          <span class="skill-name">Node.js</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="skill-logo">
+          <span class="skill-name">Git</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyek -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title text-center">project</h2>
+
+      <div class="projects-grid">
+        <!-- PROJECT CARD 1 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="img/figma porto.png" alt="Project 1">
+            <span style="position: absolute; z-index: 1; display: none;">Project 1 Preview</span>
+          </div>
+          <div class="project-info">
+            <h3>Project Figma</h3>
+            <p>
+              Project figma yang saya buat dengan menggunakan aplikasi figma
+            </p>
+            <div class="project-tags">
+              <span class="tag">Aplikasi Figma</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT CARD 2 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="img/RNG.png" alt="RNG Project">
+            <span style="position: absolute; z-index: 1; display: none;">RNG Project Preview</span>
+          </div>
+          <div class="project-info">
+            <h3>RNG</h3>
+            <h3>Random Number Generator</h3>
+            <p>
+              Sebuah algoritma untuk membuat sistem acak untuk aplikasi seperti
+              judi, permainan kartu, dan permainan RNG lainya
+            </p>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title text-center">my contact</h2>
+      <p class="section-description">
+        Silakan hubungi saya melalui formulir di bawah ini atau melalui kontak yang tersedia.
+      </p>
+
+      <ul class="contact-info">
+        <li><strong>Email:</strong> YamahamxGmail.com</li>
+        <li><strong>Location:</strong> Indonesia (Depok)</li>
+      </ul>
+
+      <form action="https://formspree.io/f/mldkkybq" method="POST" class="contact-form">
+        <input type="hidden" name="_subject" value="New message from portfolio">
+        <input type="text" name="_gotcha" style="display:none !important" tabindex="-1" autocomplete="off">
+
+        <label>
+          Your name:
+          <input type="text" name="name" placeholder="Your full name" required>
+        </label>
+
+        <label>
+          Your email:
+          <input type="email" name="_replyto" placeholder="your.email@example.com" required>
+        </label>
+
+        <label>
+          Your message:
+          <textarea name="message" placeholder="Type your message here..." required></textarea>
+        </label>
+
+        <button type="submit" class="btn-primary">Send</button>
+      </form>
+    </div>
+  </section>
+
+</body>
+
+</html>
