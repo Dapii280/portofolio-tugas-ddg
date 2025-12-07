@@ -44,13 +44,13 @@
     <div class="container">
       <h2 class="section-title text-center">about me</h2>
       <p class="section-description">
-        Saya adalah siswa SMK Taruna Bhakti yang sekarang sedang berada di tingkat xrpl2 dan saya memiliki minat di bidang
-        it ini menjadi web dev
+        Saya adalah siswa SMK Taruna Bhakti yang sekarang sedang berada di tingkat xrpl2 dan saya 
+        memiliki minat di bidang it ini menjadi web dev
       </p>
     </div>
   </section>
 
-  <!-- Kemampuan -->
+  <!-- my skills -->
   <section id="skills" class="section section-alt">
     <div class="container">
       <h2 class="section-title text-center">skills</h2>
@@ -59,7 +59,7 @@
       </p>
 
       <div class="skills-container">
-        <!-- skill gambar -->
+        <!-- foto skill -->
         <div class="skill-item">
           <img src="img/html.png" alt="HTML" class="skill-logo">
           <span class="skill-name">HTML</span>
@@ -93,13 +93,13 @@
     </div>
   </section>
 
-  <!-- Proyek -->
+  <!-- project -->
   <section id="projects" class="section">
     <div class="container">
       <h2 class="section-title text-center">project</h2>
 
       <div class="projects-grid">
-        <!-- PROJECT CARD 1 -->
+        <!-- PROJECT ke 1 -->
         <div class="project-card">
           <div class="project-image">
             <img src="img/figma porto.png" alt="Project 1">
@@ -116,7 +116,7 @@
           </div>
         </div>
 
-        <!-- PROJECT CARD 2 -->
+        <!-- PROJECT ke 2 -->
         <div class="project-card">
           <div class="project-image">
             <img src="img/RNG.png" alt="RNG Project">
@@ -142,36 +142,46 @@
   <section id="contact" class="section section-alt">
     <div class="container">
       <h2 class="section-title text-center">my contact</h2>
-      <p class="section-description">
+      <p class="section-description text-center">
         Silakan hubungi saya melalui formulir di bawah ini atau melalui kontak yang tersedia.
       </p>
 
-      <ul class="contact-info">
-        <li><strong>Email:</strong> YamahamxGmail.com</li>
-        <li><strong>Location:</strong> Indonesia (Depok)</li>
-      </ul>
+      <div class="contact-container">
+        <!-- Kotak Informasi Kontak -->
+        <div class="contact-box">
+          <h3>Informasi Kontak</h3>
+          <ul class="contact-info">
+            <li><i class="fas fa-envelope"></i> <strong>Email:</strong> YamahamxGmail.com</li>
+            <li><i class="fas fa-map-marker-alt"></i> <strong>Lokasi:</strong> Indonesia (Depok)</li>
+          </ul>
+        </div>
 
-      <form action="https://formspree.io/f/mldkkybq" method="POST" class="contact-form">
-        <input type="hidden" name="_subject" value="New message from portfolio">
-        <input type="text" name="_gotcha" style="display:none !important" tabindex="-1" autocomplete="off">
+        <!-- dari formspree nya -->
+        <div class="contact-box">
+          <h3>Kirim Pesan</h3>
+          <form action="https://formspree.io/f/mldkkybq" method="POST" class="contact-form">
+            <input type="hidden" name="_subject" value="New message from portfolio">
+            <input type="text" name="_gotcha" style="display:none !important" tabindex="-1" autocomplete="off">
 
-        <label>
-          Your name:
-          <input type="text" name="name" placeholder="Your full name" required>
-        </label>
+            <div class="form-group">
+              <label for="name">Nama Pengirim:</label>
+              <input type="text" id="name" name="name" placeholder="Nama Anda" required>
+            </div>
 
-        <label>
-          Your email:
-          <input type="email" name="_replyto" placeholder="your.email@example.com" required>
-        </label>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="_replyto" placeholder="email@contoh.com" required>
+            </div>
 
-        <label>
-          Your message:
-          <textarea name="message" placeholder="Type your message here..." required></textarea>
-        </label>
+            <div class="form-group">
+              <label for="message">Pesan:</label>
+              <textarea id="message" name="message" placeholder="Tulis pesan Anda di sini..." required></textarea>
+            </div>
 
-        <button type="submit" class="btn-primary">Send</button>
-      </form>
+            <button type="submit" class="btn-primary">Kirim Pesan</button>
+          </form>
+        </div>
+      </div>
     </div>
   </section>
 
