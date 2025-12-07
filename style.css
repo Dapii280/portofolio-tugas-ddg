@@ -201,10 +201,24 @@ body {
   /* Gaya untuk bagian kontak */
   .contact-container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
+    justify-content: flex-start; /* Mengatur ke kiri */
     margin-top: 2rem;
+  }
+  
+  .combined-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    max-width: 600px; /* Lebar maksimum untuk form */
+  }
+  
+  .contact-info-section {
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-form-section {
+    width: 100%;
   }
   
   .contact-box {
@@ -318,5 +332,98 @@ body {
   .skill-logo {
     width: 80px;    /* buat ukuran lebar untuk layar kecil */
     height: 80px;   /* buat ukuran tinggi untuk layar kecil */
+  }
+}
+
+/* Responsive Breakpoints */
+
+/* Smartphone (max-width: 767px) */
+@media (max-width: 767px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .profile-photo {
+    width: 180px;
+    height: 180px;
+  }
+  
+  .section {
+    padding: 60px 0;
+  }
+  
+  .nav-links {
+    display: none; /* Hide nav links on small screens */
+  }
+  
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Tablet (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    padding: 0 30px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .profile-photo {
+    width: 220px;
+    height: 220px;
+  }
+  
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .skills-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Laptop (1025px and above) */
+@media (min-width: 1025px) {
+  .container {
+    max-width: 1200px;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+  }
+  
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .skills-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .contact-container {
+    justify-content: flex-start;
+  }
+  
+  .combined-contact {
+    flex-direction: row;
+    max-width: 1000px;
+  }
+  
+  .contact-info-section {
+    flex: 1;
+    margin-bottom: 0;
+    padding-right: 2rem;
+  }
+  
+  .contact-form-section {
+    flex: 2;
+  }
+  
+  .contact-box {
+    flex: 1;
   }
 }
