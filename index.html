@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Daviq ddg bu miran</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -16,7 +15,7 @@
       <nav>
         <ul class="nav-links">
           <li><a href="#about">about me</a></li>
-          <li><a href="#skills">skills</a></li>
+          <li><a href="#skills">skils</a></li>
           <li><a href="#projects">project</a></li>
           <li><a href="#contact">my contact</a></li>
         </ul>
@@ -24,7 +23,7 @@
     </div>
   </header>
 
-  <!-- halaman awal -->
+  <!-- Halaman Depan -->
   <section id="home" class="hero section">
     <div class="container">
       <div class="hero-content">
@@ -45,12 +44,12 @@
       <h2 class="section-title text-center">about me</h2>
       <p class="section-description">
         Saya adalah siswa SMK Taruna Bhakti yang sekarang sedang berada di tingkat xrpl2 dan saya 
-        memiliki minat di bidang IT dan ingin menjadi web developer.
+        memiliki minat di bidang it ini menjadi web dev
       </p>
     </div>
   </section>
 
-  <!-- skills -->
+  <!-- my skills -->
   <section id="skills" class="section section-alt">
     <div class="container">
       <h2 class="section-title text-center">skills</h2>
@@ -59,7 +58,7 @@
       </p>
 
       <div class="skills-container">
-
+        <!-- foto skill -->
         <div class="skill-item">
           <img src="img/html.png" alt="HTML" class="skill-logo">
           <span class="skill-name">HTML</span>
@@ -99,44 +98,46 @@
       <h2 class="section-title text-center">project</h2>
 
       <div class="projects-grid">
-
-        <!-- Project 1 -->
+        <!-- PROJECT ke 1 -->
         <div class="project-card">
           <div class="project-image">
-            <img src="img/figma porto.png" alt="Project Figma">
+            <img src="img/figma porto.png" alt="Project 1">
+            <span style="position: absolute; z-index: 1; display: none;">Project 1 Preview</span>
           </div>
           <div class="project-info">
             <h3>Project Figma</h3>
-            <p>Project figma yang saya buat dengan menggunakan aplikasi figma.</p>
+            <p>
+              Project figma yang saya buat dengan menggunakan aplikasi figma
+            </p>
             <div class="project-tags">
               <span class="tag">Aplikasi Figma</span>
             </div>
           </div>
         </div>
 
-        <!-- Project 2 -->
+        <!-- PROJECT ke 2 -->
         <div class="project-card">
           <div class="project-image">
             <img src="img/RNG.png" alt="RNG Project">
+            <span style="position: absolute; z-index: 1; display: none;">RNG Project Preview</span>
           </div>
           <div class="project-info">
             <h3>RNG</h3>
             <h3>Random Number Generator</h3>
             <p>
               Sebuah algoritma untuk membuat sistem acak untuk aplikasi seperti
-              judi, permainan kartu, dan permainan RNG lainnya.
+              judi, permainan kartu, dan permainan RNG lainya
             </p>
             <div class="project-tags">
               <span class="tag">JavaScript</span>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- contact -->
+  <!-- Kontak -->
   <section id="contact" class="section section-alt">
     <div class="container">
       <h2 class="section-title text-center">my contact</h2>
@@ -145,22 +146,21 @@
       </p>
 
       <div class="contact-container">
+        <!-- Gabungan Kontak dan Form -->
         <div class="contact-box combined-contact">
-
-          <!-- info -->
           <div class="contact-info-section">
             <h3>Informasi Kontak</h3>
             <ul class="contact-info">
-              <strong>Email:</strong> YamahamxGmail.com</li>
-               <strong>Lokasi:</strong> Indonesia (Depok)</li>
+              <li><i class="fas fa-envelope"></i> <strong>Email:</strong> YamahamxGmail.com</li>
+              <li><i class="fas fa-map-marker-alt"></i> <strong>Lokasi:</strong> Indonesia (Depok)</li>
             </ul>
           </div>
-
-          <!-- form -->
+          
           <div class="contact-form-section">
             <h3>Kirim Pesan</h3>
             <form action="https://formspree.io/f/mldkkybq" method="POST" class="contact-form">
               <input type="hidden" name="_subject" value="New message from portfolio">
+              <input type="text" name="_gotcha" style="display:none !important" tabindex="-1" autocomplete="off">
 
               <div class="form-group">
                 <label for="name">Nama Pengirim:</label>
@@ -169,7 +169,7 @@
 
               <div class="form-group">
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="_replyto" placeholder="kaysanpriaidaman@contoh.com" required>
+                <input type="email" id="email" name="_replyto" placeholder="email@contoh.com" required>
               </div>
 
               <div class="form-group">
@@ -180,12 +180,9 @@
               <button type="submit" class="btn-primary">Kirim Pesan</button>
             </form>
           </div>
-
         </div>
       </div>
     </div>
   </section>
-
 </body>
-
 </html>
