@@ -5,7 +5,11 @@
   --card-hover: rgba(255, 255, 255, 0.1);
 }
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+}
 
 body {
   font-family: Arial, sans-serif;
@@ -32,24 +36,57 @@ body {
   z-index: 1000;
 }
 
-.nav-content, .hero-content {
+.nav-content,
+.hero-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
 }
 
-.logo { color: white; font-weight: bold; font-size: 1.5rem; }
-.nav-links { display: flex; gap: 20px; list-style: none; }
-.nav-links a { color: white; text-decoration: none; padding: 5px 10px; border-radius: 5px; }
-.nav-links a:hover { background: rgba(255, 255, 255, 0.2); }
+.logo {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.nav-links a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
 
 /* Hero Section */
-.hero { min-height: 100vh; padding-top: 80px; display: flex; align-items: center; }
-.hero h1 { font-size: 3rem; margin-bottom: 1rem; }
-.hero-image { flex: 1; display: flex; justify-content: center; }
+.hero {
+  min-height: 100vh;
+  padding-top: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
 
 /* Foto Profil */
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
 .profile-photo {
   width: 250px;
   height: 250px;
@@ -60,10 +97,14 @@ body {
 }
 
 /* Section */
-.section { padding: 80px 0; }
-.section-title { text-align: center; margin-bottom: 40px; }
-.text-right { text-align: right !important; }
-.text-left { text-align: left !important; }
+.section {
+  padding: 80px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
 
 /* Skills */
 .skills-container {
@@ -162,7 +203,83 @@ body {
   padding: 0.25rem 0.75rem;
   border-radius: 15px;
   font-size: 0.8rem;
-  display: inline-block;
+}
+
+/* Contact Box */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.contact-box {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 700px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-box h3 {
+  color: white;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.contact-info li {
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  color: var(--primary);
+}
+
+/* Form */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  color: white;
+}
+
+.form-group textarea {
+  height: 120px;
+  resize: none;
+}
+
+.btn-primary {
+  padding: 0.75rem 1.5rem;
+  background: var(--primary);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  opacity: 0.8;
 }
 
 /* Responsif */
@@ -170,260 +287,18 @@ body {
   .nav-links {
     display: none;
   }
-  
-  .hero h1 {
-    font-size: 2rem;
-  }
-  
+
   .hero-content {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .profile-photo {
     width: 200px;
     height: 200px;
   }
-  
+
   .projects-grid {
     grid-template-columns: 1fr;
-  }
-  
-  .skills-container {
-    gap: 1rem;
-  }
-  
-  .skill-item {
-    padding: 1rem;
-    min-width: 100px;
-  }
-  
-  /* Gaya untuk bagian kontak */
-  .contact-container {
-    display: flex;
-    justify-content: flex-start; /* Mengatur ke kiri */
-    margin-top: 2rem;
-  }
-  
-  .combined-contact {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    width: 100%;
-    max-width: 600px; /* Lebar maksimum untuk form */
-  }
-  
-  .contact-info-section {
-    margin-bottom: 1.5rem;
-  }
-  
-  .contact-form-section {
-    width: 100%;
-  }
-  
-  .contact-box {
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 10px;
-    padding: 2rem;
-    flex: 1;
-    min-width: 300px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: all 0.3s ease;
-  }
-  
-  .contact-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  .contact-box h3 {
-    color: white;
-    margin-bottom: 1.5rem;
-    font-size: 1.5rem;
-    text-align: center;
-    position: relative;
-    padding-bottom: 10px;
-  }
-  
-  .contact-box h3::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 50px;
-    height: 2px;
-    background: var(--primary);
-  }
-  
-  .contact-info {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .contact-info li {
-    margin-bottom: 1rem;
-    color: rgba(255, 255, 255, 0.8);
-    display: flex;
-    align-items: center;
-  }
-  
-  .contact-info i {
-    margin-right: 10px;
-    color: var(--primary);
-    width: 20px;
-    text-align: center;
-  }
-  
-  .form-group {
-    margin-bottom: 1.5rem;
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: rgba(255, 255, 255, 0.9);
-  }
-  
-  .form-group input,
-  .form-group textarea {
-    width: 100%;
-    padding: 0.75rem;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 5px;
-    color: white;
-    font-family: inherit;
-    transition: all 0.3s ease;
-  }
-  
-  .form-group input:focus,
-  .form-group textarea:focus {
-    outline: none;
-    border-color: var(--primary);
-    box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.3);
-  }
-  
-  .form-group textarea {
-    min-height: 120px;
-    resize: vertical;
-  }
-  
-  .btn-primary {
-    display: inline-block;
-    background: var(--primary);
-    color: white;
-    padding: 0.75rem 2rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    width: 100%;
-  }
-  
-  .btn-primary:hover {
-    background: #1557b0;
-    transform: translateY(-2px);
-  }
-  
-  /* ini itu buat ukuran ikon untuk layar mobile */
-  .skill-logo {
-    width: 80px;    /* buat ukuran lebar untuk layar kecil */
-    height: 80px;   /* buat ukuran tinggi untuk layar kecil */
-  }
-}
-
-/* Responsive Breakpoints */
-
-/* Smartphone (max-width: 767px) */
-@media (max-width: 767px) {
-  .hero h1 {
-    font-size: 2rem;
-  }
-  
-  .profile-photo {
-    width: 180px;
-    height: 180px;
-  }
-  
-  .section {
-    padding: 60px 0;
-  }
-  
-  .nav-links {
-    display: none; /* Hide nav links on small screens */
-  }
-  
-  .hero-content {
-    flex-direction: column;
-    text-align: center;
-  }
-}
-
-/* Tablet (768px - 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .container {
-    padding: 0 30px;
-  }
-  
-  .hero h1 {
-    font-size: 2.5rem;
-  }
-  
-  .profile-photo {
-    width: 220px;
-    height: 220px;
-  }
-  
-  .projects-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .skills-container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-/* Laptop (1025px and above) */
-@media (min-width: 1025px) {
-  .container {
-    max-width: 1200px;
-  }
-  
-  .hero h1 {
-    font-size: 3rem;
-  }
-  
-  .projects-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  
-  .skills-container {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  
-  .contact-container {
-    justify-content: flex-start;
-  }
-  
-  .combined-contact {
-    flex-direction: row;
-    max-width: 1000px;
-  }
-  
-  .contact-info-section {
-    flex: 1;
-    margin-bottom: 0;
-    padding-right: 2rem;
-  }
-  
-  .contact-form-section {
-    flex: 2;
-  }
-  
-  .contact-box {
-    flex: 1;
   }
 }
