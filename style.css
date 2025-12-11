@@ -40,16 +40,49 @@ body {
 }
 
 .logo { color: white; font-weight: bold; font-size: 1.5rem; }
-.nav-links { display: flex; gap: 20px; list-style: none; }
-.nav-links a { color: white; text-decoration: none; padding: 5px 10px; border-radius: 5px; }
-.nav-links a:hover { background: rgba(255, 255, 255, 0.2); }
+.nav-links { 
+  display: flex; 
+  gap: 20px; 
+  list-style: none; 
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.nav-links a, .nav-links .btn { 
+  color: white; 
+  text-decoration: none; 
+  padding: 5px 10px; 
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+}
+.nav-links a:not(.github):hover { background: rgba(255, 255, 255, 0.2); }
+
+/* untuk tombol download */
+.btn {
+  background: transparent;
+  border: none;
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin: 0;
+}
 
 /* untuk icon github */
-.github  {
-  color: #000000 !important;
+.github {
+  color: white !important;
   text-decoration: none;
   padding: 5px 10px;
   border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 
